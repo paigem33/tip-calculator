@@ -15,15 +15,15 @@
         <input type="text" id="userEntered" placeholder="Ticket amount">
     </form>
     
-    <ul>
-        <li>10%</li>
-        <li>15%</li>
-        <li>20%</li>
-        <li>25%</li>
+    <ul id="tipOptions">
+        <li onclick="calc(.10)">10%</li>
+        <li onclick="calc(.15)">15%</li>
+        <li onclick="calc(.20)">20%</li>
+        <li onclick="calc(.25)">25%</li>
     </ul>
     
-    <div id="tipAmount"></div>
-    <div id="totalAmount"></div>
+    <div id="tipAmount">Tip amount</div>
+    <div id="totalAmount">Total amount</div>
     </div>
     
 <script src="script.js"></script>

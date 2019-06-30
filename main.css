@@ -13,7 +13,7 @@ html {
     margin: 40px 10px;
     padding-bottom: 20px;
     -webkit-box-shadow: 0 0 10px #000;
-        box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
 }
 h1 {
     text-align: center;
@@ -56,6 +56,7 @@ li {
     justify-content: center;
     align-items: center;
     font-size: 24px;
+    transition: .5s
 }
 li:first-of-type {
     border-radius: 10px 0 0 10px;
@@ -63,11 +64,31 @@ li:first-of-type {
 li:last-of-type {
     border-radius: 0 10px 10px 0;
 }
-
+li:hover {
+    background-color: rgba(255, 71, 26,.8);
+    color: #fff;
+    box-shadow: 0 0 10px #000;
+    cursor: pointer;
+}
+.active {
+    background-color: rgba(255, 71, 26,.8);
+    color: #fff;
+    box-shadow: 0 0 10px #000;
+}
 #tipAmount, #totalAmount {
     border: solid 1px black;
     height: 50px;
     max-width: 290px;
     border-radius: 10px;
     margin: 0 auto 20px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey
+}
+@media screen and (min-width: 420px) {
+    .main {
+        margin: 40px auto;
+    }
 }
